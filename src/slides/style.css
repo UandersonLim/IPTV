@@ -1,0 +1,10 @@
+.container{
+    position: relative;
+    width: 100%;
+}
+
+
+.imageSlide{
+    width: 1920px;
+    height: 550px;
+}
