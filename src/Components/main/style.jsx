@@ -1,83 +1,134 @@
 import styled from "styled-components";
 
 const Stylesection = styled.main`
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
 
-        .box-button-text{
-        display: flex;
-        justify-content: center;
+  .box-button-text {
+    display: flex;
+    justify-content: center;
+  }
+
+  .boxMessage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: #FD914C;
+    margin-bottom: 160px;
+
+
+    p{
+      text-align: center;
+      font-size: 24px;
+      font-weight: 600;
     }
-
-`
+  }
+`;
 
 const Divtext = styled.div`
-    text-align: center;
-    margin-top: 40px;
-    font-weight: 600;
-    color: #ffffff;
-    font-size: 20px;
-`
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 600;
+  color: #ffffff;
+  font-size: 20px;
+`;
 
 const ButtonTesteGratis = styled.button`
-    width: 600px;
-    height: 50px;
-    font-size: 20px;
-    font-weight: 600;
-    margin-top: 35px;
-    border-radius: 5px;
-`
+  width: 600px;
+  height: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 35px;
+  border-radius: 5px;
+`;
 
 const SectionPlanos = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  width: 90%;
+  background-color: #fdfbfb;
+
+  .planosPrimeLink {
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 30px 0;
+  }
+
+  span {
+    font-weight: bold;
+  }
+
+  .paragrafoPlanos {
+    text-align: center;
+    padding: 0 150px;
+    margin-top: 20px;
+  }
+
+  .boxLine {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+  }
+
+  .line1 {
+    width: 465px;
+    height: 5px;
+    background-color: #23201d;
+  }
+
+  .line2 {
+    width: 50px;
+    height: 5px;
+    background-color: #fe924d;
+  }
+
+  .boxPlans {
+    display: flex;
+  }
+  .linebox {
+    width: 2px;
     margin-top: 50px;
-    width: 1400px;
-    height: 900px;
-    background-color: #FDFBFB;
+    height: 995px;
+    background-color: #696969;
+  }
 
-    .planosPrimeLink{
-        text-align: center;
-        color: #000000;
-        font-size: 20px;
-        font-weight: 600;
-        margin: 30px 0;
-    }
-    
-    span{
-        font-weight: bold;
-    }
+  .textInfor{
+    margin-bottom: 180px;
+  }
 
-    .paragrafoPlanos{
-        text-align: center;
-        padding: 0 150px;
-        margin-top: 20px;
-    }
+  .boxPlataformas{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-    
-    
-    .boxLine{
-        display: flex;
-        justify-content: center;
+  .boxPlataformas li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: 300;
+    border: 1px solid #000000;
+    width: 350px;
+    height: 85px;
+    gap: 7px;
+    margin-bottom: 50px;
+  }
 
-    }
+  .boxPlataformas img{
+    width: 26px;
+    height: 34px;
+  }
 
-     .line1{
-        width: 465px;
-        height: 5px;
-        background-color: #23201D;
-    }
+`;
 
-    .line2{
-        width: 50px;
-        height: 5px;
-        background-color: #FE924D;
-    }
-
-`
-
-export {Stylesection, Divtext, ButtonTesteGratis, SectionPlanos};
+export { Stylesection, Divtext, ButtonTesteGratis, SectionPlanos };
