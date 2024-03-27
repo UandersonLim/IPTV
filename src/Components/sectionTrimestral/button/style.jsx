@@ -12,6 +12,10 @@ const StyleButton = styled.button`
       
   }
 
+  @media(max-width: 480px){
+    width: 200px;
+  }
+
 `;
 
 export { StyleButton };
