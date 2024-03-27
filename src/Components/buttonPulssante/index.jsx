@@ -5,7 +5,7 @@ const ButtonWhatApp = () => {
     <StyleButton>
       <a href="https://api.whatsapp.com/send?phone=5519981047544&text=Ol%C3%A1!%20Quero%20saber%20mais." target="_blank">
         <img
-          src="public/icones/Whatsapp.png"
+          src="icones/Whatsapp.png"
           alt="Icone WhatsApp"
           title="Fale com Atendente"
         />

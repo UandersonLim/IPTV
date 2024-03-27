@@ -6,7 +6,7 @@ export const StyleSection = styled.section`
   width: 450px;
   background-color: #ffffff;
   margin: 50px 0 20px 0;
-  background-image: url("./public/superman.png");
+  background-image: url("superman.png");
   background-repeat: no-repeat;
   color: #ffffff;
   position: relative;
