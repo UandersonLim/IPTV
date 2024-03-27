@@ -48,5 +48,42 @@ export const StyleSection = styled.section`
     height: 24px;
   }
 
+  .boxButon{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  @media(max-width: 1024px){
+    margin-top: 0;
+  }
+
+   @media(max-width: 600px){
+      width: 350px;
+
+      h1, data{
+        font-size: 180%;
+      }
+
+      ul li{
+        font-size: 95%;
+      }
+  }
+
+  @media(max-width: 480px){
+    width: 280px;
+    background-position: 30%;
+
+    h1, data{
+        font-size: 150%;
+      }
+
+      ul li{
+        font-size: 75%;
+      }
+
+  }
+ 
+
   
 `;
