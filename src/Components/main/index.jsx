@@ -7,9 +7,9 @@ import {
 import ComponentMensal from "../sectionMensal";
 import ComponentTrimestral from "../sectionTrimestral";
 
-import App from '../../../public/icones/App.svg'
-import Android from '../../../public/icones/android.svg'
-import Google from '../../../public/icones/chrome.svg'
+import App from "../../../public/icones/App.svg";
+import Android from "../../../public/icones/android.svg";
+import Google from "../../../public/icones/chrome.svg";
 
 const Main = () => {
   return (
@@ -19,11 +19,11 @@ const Main = () => {
       </div>
       <div className="box-button-text">
         <ButtonTesteGratis>
-          Clique para solicitar um teste grátis
+          <a href="https://api.whatsapp.com/send?phone=5519981047544&text=Quero%20um%20teste%2C%20de%202%20horas!" target="_blank">Clique para solicitar um teste grátis</a>
         </ButtonTesteGratis>
       </div>
 
-      <SectionPlanos>
+      <SectionPlanos id="planos">
         <p className="planosPrimeLink">Conheça nossos planos PrimeLink</p>
 
         <div className="boxLine">
@@ -44,19 +44,34 @@ const Main = () => {
           <div className="linebox"></div>
           <ComponentTrimestral />
         </div>
-        <p className="textInfor"><span>Informações importantes: </span>Para retirada de canais adultos da lista, deve ser
-          <p>solicitando a exclusão da sua lista. Caso necessario contate nossa equipe.</p>
+        <p className="textInfor">
+          <span>Informações importantes: </span>Para retirada de canais adultos
+          da lista, deve ser
+          <p>
+            solicitando a exclusão da sua lista. Caso necessario contate nossa
+            equipe.
+          </p>
         </p>
-      <div className="boxMessage">
-        <p>Uma nova forma de assistir TV
-          <p>quando e onde quiser, por um valor super acessível.</p>
-        </p>
-      </div>
-      <ul className="boxPlataformas">
-        <li><img src={App} alt="Icone APP"/>App Store</li>
-        <li><img src={Android} alt="Icone Android"/>Google Player</li>
-        <li><img src={Google} alt="Icone Web Player"/>Web Player</li>
-      </ul>
+        <div className="boxMessage">
+          <p>
+            Uma nova forma de assistir TV
+            <p>quando e onde quiser, por um valor super acessível.</p>
+          </p>
+        </div>
+        <ul className="boxPlataformas" id="compatibilidade">
+          <li>
+            <img src={App} alt="Icone APP" />
+            App Store
+          </li>
+          <li>
+            <img src={Android} alt="Icone Android" />
+            Google Player
+          </li>
+          <li>
+            <img src={Google} alt="Icone Web Player" />
+            Web Player
+          </li>
+        </ul>
       </SectionPlanos>
     </Stylesection>
   );

@@ -1,21 +1,22 @@
 import styled from "styled-components";
 
-
-const ContainerButton = styled.a`
-    display: flex;
-    justify-content: center;
-`
-
 const StyleButton = styled.button`
-    width: 235px;
-    height: 37px;
-    margin: 140px 0;
-    background-color: #23201D;
-    color: #FFFFFF;
-    border: none;
-    font-weight: 600;
-    
+  width: 235px;
+  height: 37px;
+  margin: 140px 0;
+  border: none;
+  font-weight: 600;
+  background-color: #000000;
+  
+  a{
+      color: #FFFFFF;
+      
+  }
 
-`
+  @media(max-width: 480px){
+    width: 200px;
+  }
 
-export { StyleButton, ContainerButton }
+`;
+
+export { StyleButton };

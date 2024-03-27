@@ -13,17 +13,16 @@ const Stylesection = styled.main`
     justify-content: center;
   }
 
-  .boxMessage{
+  .boxMessage {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 200px;
-    background-color: #FD914C;
+    background-color: #fd914c;
     margin-bottom: 160px;
 
-
-    p{
+    p {
       text-align: center;
       font-size: 24px;
       font-weight: 600;
@@ -37,6 +36,10 @@ const Divtext = styled.div`
   font-weight: 600;
   color: #ffffff;
   font-size: 20px;
+
+  @media (max-width: 748px) {
+    font-size: 90%;
+  }
 `;
 
 const ButtonTesteGratis = styled.button`
@@ -46,6 +49,20 @@ const ButtonTesteGratis = styled.button`
   font-weight: 600;
   margin-top: 35px;
   border-radius: 5px;
+
+  a {
+    color: #000000;
+  }
+
+  @media (max-width: 748px) {
+    width: 300px;
+    font-size: 90%;
+    background-color: #c7b6ac;
+
+    a {
+      color: #ffffff;
+    }
+  }
 `;
 
 const SectionPlanos = styled.section`
@@ -75,6 +92,7 @@ const SectionPlanos = styled.section`
   }
 
   .boxLine {
+    width: 100%;
     display: flex;
     justify-content: center;
   }
@@ -101,17 +119,17 @@ const SectionPlanos = styled.section`
     background-color: #696969;
   }
 
-  .textInfor{
+  .textInfor {
     margin-bottom: 180px;
   }
 
-  .boxPlataformas{
+  .boxPlataformas {
     display: flex;
     width: 100%;
     justify-content: space-around;
   }
 
-  .boxPlataformas li{
+  .boxPlataformas li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,11 +142,76 @@ const SectionPlanos = styled.section`
     margin-bottom: 50px;
   }
 
-  .boxPlataformas img{
+  .boxPlataformas img {
     width: 26px;
     height: 34px;
   }
 
+  @media (max-width: 748px) {
+    width: 80%;
+
+    .line1 {
+      display: none;
+    }
+
+    .line2 {
+      width: 70%;
+    }
+
+    .paragrafoPlanos {
+      font-size: 90%;
+      line-height: 25px;
+      letter-spacing: 5%;
+      padding: 0 5%;
+    }
+
+    .planosPrimeLink {
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 1024px) {
+    .boxPlans {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .linebox {
+      display: none;
+    }
+
+    .textInfor {
+      margin-bottom: 50px;
+      text-align: center;
+      font-size: 90%;
+    }
+  }
+
+  @media (max-width: 1280px) {
+    .boxPlataformas {
+      flex-direction: column;
+      align-items: center;
+      /* width: 90%; */
+    }
+
+    .boxPlataformas li{
+      width: 80%;
+    }
+  }
+
+  @media (max-width: 468px) {
+    .boxMessage p {
+      font-size: 15px;
+    }
+
+    .boxPlataformas li{
+      font-size: 120%;
+    }
+
+    .planosPrimeLink{
+      font-size: 16px;
+    }
+    
+  }
 `;
 
 export { Stylesection, Divtext, ButtonTesteGratis, SectionPlanos };

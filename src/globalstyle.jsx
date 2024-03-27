@@ -8,12 +8,43 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         list-style: none;
         font-family: 'Roboto', sans-serif;
+        text-decoration: none;
     }
 
     body{
         background-color: #23201d;
+        /* position: relative; */
+    }
+
+    @media (max-width: 600px) {
+    .displayON {
+      position: absolute;
+      color: #FE924D;
+      background-color: #23201d;
+      z-index: 3;
+      right: 0;
+
+      width: 60%;
+      top: 120px;
+
+      padding: 1rem;
+      font-weight: 900;
 
     }
+
+    .displayON ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .displayOFF{
+        display: none;
+    }
+  }
 
 `
 
