@@ -12,7 +12,6 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background-color: #23201d;
-        /* position: relative; */
     }
 
     @media (max-width: 600px) {
@@ -30,6 +29,11 @@ const GlobalStyle = createGlobalStyle`
       font-weight: 900;
       cursor: pointer;
 
+      
+    }
+    
+    .body{
+      overflow: hidden;
     }
 
     .displayON ul {

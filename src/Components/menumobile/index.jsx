@@ -1,13 +1,13 @@
-import StyleMenuMobile from "./style";
 import { motion } from "framer-motion";
+import "./style.css"
 
 const MenuMobile = (props) => {
   return (
-      <motion.StyleMenuMobile className={props.class}
+      <motion.nav className={props.class}
       animate={{
         scale: [1, 2, 2, 1, 1],
         rotate: [0, 0, 180, 180, 0],
-        borderRadius: ["0%", "0%", "50%", "50%", "0%"]
+        borderRadius: ["0%", "0%", "0%", "0%", "0%"]
       }}
       transition={{
         duration: 2,
@@ -17,7 +17,7 @@ const MenuMobile = (props) => {
         repeatDelay: 1
       }}
       >
-        <ul>
+        <ul className="list">
           <li>
             <a href="#planos">Planos</a>
           </li>
@@ -33,7 +33,7 @@ const MenuMobile = (props) => {
             </a>
           </li>
         </ul>
-      </motion.StyleMenuMobile>
+      </motion.nav>
   );
 };
 
