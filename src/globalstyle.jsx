@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -29,6 +28,7 @@ const GlobalStyle = createGlobalStyle`
 
       padding: 1rem;
       font-weight: 900;
+      cursor: pointer;
 
     }
 
@@ -39,13 +39,19 @@ const GlobalStyle = createGlobalStyle`
       align-items: center;
       gap: 2rem;
       margin-top: 1rem;
+      
     }
 
     .displayOFF{
         display: none;
     }
+
+    .box{
+      transition: 0.7s;
+      transform: rotate(45deg);
+    }
   }
 
-`
+`;
 
 export default GlobalStyle;

@@ -5,10 +5,12 @@ const StyleMenuHamburgue = styled.div`
 
   @media (max-width: 600px) {
     display: flex;
-    width: 25px;
+    width: 30px;
     flex-direction: column;
     gap: 6px;
     margin-right: 1rem;
+    transition: 0.2s;
+    cursor: pointer;
 
     .line {
       background-color: #ec8849;
@@ -18,7 +20,4 @@ const StyleMenuHamburgue = styled.div`
   }
 `;
 
-
-
-
-export {StyleMenuHamburgue};
+export { StyleMenuHamburgue };
