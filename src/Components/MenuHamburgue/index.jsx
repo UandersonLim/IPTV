@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 const MenuHamburgue = () => {
   const [classCSS, setClassCSS] = useState("displayOFF");
+  const [ menu, setMenu] = useState("menu-hamburgue")
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -20,12 +21,13 @@ const MenuHamburgue = () => {
   }, []); 
 
   const toggleMenu = () => {
+    setMenu(menu === "menu-hamburgue" ? "menu-hamburgue box" : "menu-hamburgue")
     setClassCSS(classCSS === "displayOFF" ? "displayON" : "displayOFF");
   };
 
   return (
     <>
-      <StyleMenuHamburgue onClick={toggleMenu} className="menu-hamburgue">
+      <StyleMenuHamburgue onClick={toggleMenu} className={menu}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
