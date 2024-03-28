@@ -50,6 +50,10 @@ const GlobalStyle = createGlobalStyle`
       transition: 0.7s;
       transform: rotate(45deg);
     }
+
+    .boxNone{
+      transform: rotate(0deg);
+    }
   }
 
 `;

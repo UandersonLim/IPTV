@@ -10,6 +10,7 @@ const MenuHamburgue = () => {
     const handleClickOutside = (event) => {
       if (!event.target.closest('.menu-hamburgue')) {
         setClassCSS("displayOFF");
+        setMenu(menu === "menu-hamburgue boxNone" ? "menu-hamburgue box" : "menu-hamburgue")
       }
     };
 
@@ -18,6 +19,7 @@ const MenuHamburgue = () => {
     return () => {
       window.removeEventListener('click', handleClickOutside);
     };
+
   }, []); 
 
   const toggleMenu = () => {
