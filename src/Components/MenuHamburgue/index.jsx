@@ -1,16 +1,16 @@
-import { StyleMenuHamburgue } from "./style";
+import { StyleMenuHamburguer } from "./style";
 import MenuMobile from "../menumobile";
 import { useEffect, useState } from "react";
 
 const MenuHamburgue = () => {
   const [classCSS, setClassCSS] = useState("displayOFF");
-  const [ menu, setMenu] = useState("menu-hamburgue")
+  const [ menu, setMenu] = useState("menu-Hamburguer")
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.menu-hamburgue')) {
+      if (!event.target.closest('.menu-Hamburguer')) {
         setClassCSS("displayOFF");
-        setMenu(menu === "menu-hamburgue boxNone" ? "menu-hamburgue box" : "menu-hamburgue")
+        setMenu(menu === "menu-Hamburguer boxNone" ? "menu-Hamburguer box" : "menu-Hamburguer")
       }
     };
 
@@ -23,17 +23,17 @@ const MenuHamburgue = () => {
   }, []); 
 
   const toggleMenu = () => {
-    setMenu(menu === "menu-hamburgue" ? "menu-hamburgue box" : "menu-hamburgue")
+    setMenu(menu === "menu-Hamburguer" ? "menu-Hamburguer box" : "menu-Hamburguer")
     setClassCSS(classCSS === "displayOFF" ? "displayON" : "displayOFF");
   };
 
   return (
     <>
-      <StyleMenuHamburgue onClick={toggleMenu} className={menu}>
+      <StyleMenuHamburguer onClick={toggleMenu} className={menu}>
         <div className="line"></div>
         <div className="line"></div>
         <div className="line"></div>
-      </StyleMenuHamburgue>
+      </StyleMenuHamburguer>
       <MenuMobile class={classCSS} />
     </>
   );

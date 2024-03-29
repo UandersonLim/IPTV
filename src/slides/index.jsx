@@ -6,10 +6,16 @@ import Button from '../Components/button'
 const ContainSlide = () => {
 
   const data = [
-    { id: "1", image: "transforme.png" },
+    { id: "1", image: "vovo-ninja.png" },
     { id: "2", image: "homem-aranha.png" },
     { id: "3", image: "aquaman.png" },
     { id: "4", image: "familia.png" },
+    { id: "5", image: "Wish.png" },
+    { id: "6", image: "transforme.png" },
+    { id: "7", image: "mergulho-noturno.png" },
+    { id: "8", image: "amigo-robo.png" },
+    { id: "9", image: "nossoLar.png" },
+    { id: "10", image: "brasileirao.png" },
   ];
 
 

@@ -11,12 +11,9 @@ const StyleButton = styled.a`
         0% {
             -webkit-transform: translate(0);
         }
-
         100%{
             -webkit-transform: translateY(0.7em)
         }
-        
-
     }
 
     img{
