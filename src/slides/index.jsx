@@ -44,7 +44,7 @@ const ContainSlide = () => {
           effect={'creative'}
           modules={[Autoplay, EffectCreative, Pagination, Navigation]}
           slidesPerView={1}
-          pagination={{clickable: true}}
+          // pagination={{clickable: true}}
           navigation={true}
 
         >
