@@ -17,7 +17,7 @@ const Main = () => {
       <div>
         <Divtext>Disponibilizamos um teste grátis por 2 horas</Divtext>
       </div>
-      <div className="box-button-text">
+      <div className="box-button-test-free-two-hours">
         <ButtonTesteGratis>
           <a href="https://api.whatsapp.com/send?phone=5519981047544&text=Quero%20um%20teste%2C%20de%202%20horas!" target="_blank">Clique para solicitar um teste grátis</a>
         </ButtonTesteGratis>
@@ -31,7 +31,7 @@ const Main = () => {
           <div className="line2"></div>
         </div>
 
-        <p className="paragrafoPlanos">
+        <p className="paragraphplans">
           A <span>PrimeLink TV</span> oferece as melhores{" "}
           <span>listas IPTV</span> do <span>mercado brasileiro</span> com{" "}
           <p>
@@ -58,7 +58,7 @@ const Main = () => {
             <p>quando e onde quiser, por um valor super acessível.</p>
           </p>
         </div>
-        <ul className="boxPlataformas" id="compatibilidade">
+        <ul className="boxPlatforms" id="compatibilidade">
           <li>
             <img src={App} alt="Icone APP" />
             App Store

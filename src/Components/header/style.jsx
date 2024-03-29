@@ -7,10 +7,6 @@ const StyleHeader = styled.header`
     height: 120px;
     background-color: #23201d;
 
-    .BoxMenuHamburguer{
-        display: block;
-    }
-
     ul{
         display: flex;
         gap: 20px;
@@ -35,7 +31,6 @@ const StyleHeader = styled.header`
     
 
     @media(max-width: 600px){
-        /* position: absolute; */
         width: 100%;
         z-index: 2;
 

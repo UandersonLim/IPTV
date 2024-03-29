@@ -8,7 +8,7 @@ const Stylesection = styled.main`
   align-items: center;
   margin-bottom: 100px;
 
-  .box-button-text {
+  .box-button-test-free-two-hours {
     display: flex;
     justify-content: center;
   }
@@ -85,7 +85,7 @@ const SectionPlanos = styled.section`
     font-weight: bold;
   }
 
-  .paragrafoPlanos {
+  .paragraphplans {
     text-align: center;
     padding: 0 150px;
     margin-top: 20px;
@@ -123,13 +123,13 @@ const SectionPlanos = styled.section`
     margin-bottom: 180px;
   }
 
-  .boxPlataformas {
+  .boxPlatforms {
     display: flex;
     width: 100%;
     justify-content: space-around;
   }
 
-  .boxPlataformas li {
+  .boxPlatforms li {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -142,7 +142,7 @@ const SectionPlanos = styled.section`
     margin-bottom: 50px;
   }
 
-  .boxPlataformas img {
+  .boxPlatforms img {
     width: 26px;
     height: 34px;
   }
@@ -158,7 +158,7 @@ const SectionPlanos = styled.section`
       width: 70%;
     }
 
-    .paragrafoPlanos {
+    .paragraphplans {
       font-size: 90%;
       line-height: 25px;
       letter-spacing: 5%;
@@ -191,14 +191,13 @@ const SectionPlanos = styled.section`
     .boxMessage{
       margin-bottom: 3rem;
     }
-    .boxPlataformas {
+    .boxPlatforms {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      /* width: 90%; */
     }
 
-    .boxPlataformas li{
+    .boxPlatforms li{
       width: 80%;
     }
   }
@@ -208,7 +207,7 @@ const SectionPlanos = styled.section`
       font-size: 15px;
     }
 
-    .boxPlataformas li{
+    .boxPlatforms li{
       font-size: 120%;
     }
 

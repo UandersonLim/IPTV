@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyleMenuHamburgue = styled.div`
+const StyleMenuHamburguer = styled.div`
   display: none;
 
   @media (max-width: 600px) {
@@ -20,4 +20,4 @@ const StyleMenuHamburgue = styled.div`
   }
 `;
 
-export { StyleMenuHamburgue };
+export { StyleMenuHamburguer };
