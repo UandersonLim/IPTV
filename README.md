@@ -1,8 +1,31 @@
-# React + Vite
+<html>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Projeto Restaurante
 
-Currently, two official plugins are available:
+Projeto desenvolvido para um cliente!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+No intuito de captar mais clientes e ter seu próprio site de apresentação dos planos e serviços.
+
+# Ferramentas Utilizadas
+
+- React
+
+- Styled-components
+
+- Métodos nativos no JavaScript
+
+- Swiper
+
+- framer-motion
+
+
+- Para acessar o site, é só clicar no GIF abaixo.
+
+    <div>
+    <a href="https://primelink-tv.store">
+    <img src="./public/site-IPTV.gif" alt="Gif site"/>
+    </a>
+    
+    </div>
+
+</html>
